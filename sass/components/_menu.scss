@@ -1,0 +1,30 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.menu__content {
+  font-weight: 500;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
