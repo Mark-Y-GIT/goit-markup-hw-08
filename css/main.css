@@ -131,10 +131,6 @@ img {
   margin-right: 93px;
 }
 
-.logo--color {
-  color: var(--accent-color);
-}
-
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -143,6 +139,10 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   color: #000000;
+}
+
+.logo--color {
+  color: var(--accent-color);
 }
 
 .page-header {
@@ -185,28 +185,71 @@ img {
   color: var(--title-color);
 }
 
-.contacts-list {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767.98px) {
+  .contacts-list,
+  .menu {
+    display: none;
+  }
 }
 
-.contacts-list__contacts {
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media screen and (min-width: 767.98px) {
+  .contacts-list {
+    margin-left: auto;
+  }
+  .contacts-list__contacts {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+  .contacts-list__icon {
+    margin-right: 8px;
+  }
 }
 
-.contacts-list__contacts:not(:last-child) {
-  margin-right: 30px;
+.contacts-list__contacts:hover .contacts-list__icon,
+.contacts-list__contacts:focus .contacts-list__icon {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1198.98px) {
+  .contacts-list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  .contacts-list__icon {
+    margin-right: 10px;
+  }
+  .contacts-list__contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts-list__contacts:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .contacts-list__contacts:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .header__logo {
+    margin-right: 88px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .contacts-list__icon {
-  margin-right: 10px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -215,6 +258,15 @@ img {
 .contacts-list__contacts:hover .contacts-list__icon,
 .contacts-list__contacts:focus .contacts-list__icon {
   fill: var(--accent-color);
+}
+
+@media screen and (max-width: 767.98px) {
+  .header__logo {
+    margin-right: 0px;
+  }
+  .page-header__container {
+    justify-content: flex-start;
+  }
 }
 
 .hero {

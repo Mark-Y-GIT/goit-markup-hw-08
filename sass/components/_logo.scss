@@ -2,10 +2,6 @@
   margin-right: 93px;
 }
 
-.logo--color {
-  color: var(--accent-color);
-}
-
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -15,4 +11,8 @@
   padding-bottom: 25px;
 
   color: #000000;
+}
+
+.logo--color {
+  color: var(--accent-color);
 }
