@@ -80,8 +80,9 @@
 @media screen and (max-width: 767.98px) {
   .header__logo {
     margin-right: 0px;
+    padding: 16px 0px;
   }
   .page-header__container {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
