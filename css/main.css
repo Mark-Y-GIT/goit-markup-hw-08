@@ -422,7 +422,7 @@ img {
 }
 
 .mobile-menu__item:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__link--mail {
@@ -648,6 +648,10 @@ img {
 
 @media screen and (max-width: 1199.98px) {
   .team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
     margin-bottom: 30px;
   }
 }
