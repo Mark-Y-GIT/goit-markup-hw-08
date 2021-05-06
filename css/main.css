@@ -273,6 +273,7 @@ img {
 .hero {
   background-color: var(--dark-bg-color);
   text-align: center;
+  max-width: auto;
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -289,6 +290,45 @@ img {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+
+.hero--bg-image {
+  background-image: url(../../images/hero/hero-mobile/Header_480.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero--bg-image {
+    background-image: url(../../images/hero/hero-mobile/Header_480x2.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero--bg-image {
+    background-image: url(../../images/hero/hero-tab/Header_768.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero--bg-image {
+    background-image: url(../../images/hero/hero-tab/Header_768x2.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .hero--bg-image {
+    background-image: url(../../images/hero/hero-pc/Header_1200.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (min-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 1199.98px) and (min-resolution: 2dppx) {
+  .hero--bg-image {
+    background-image: url(../../images/hero/hero-pc/Header_1200x2.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
